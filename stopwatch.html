@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StopWatch</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        h1 {
+        font-size: 50px;
+        font-weight: bold;
+       }
+
+        #displayTime {
+            width: 70%;
+            height: 150px;
+            border: none;
+            background-color: rgb(224, 224, 218);
+            margin-bottom: 10px;
+            border-radius: 50px;
+            font-size: 70px;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .buttons {
+            width: 70%;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        input{
+            width: 140px;
+            height: 50px;
+            border: none;
+            border-radius: 20px;
+            margin-right: 10px ;
+            color: white;
+            font-size: 20px;
+        }
+        #start {
+            background-color: rgb(126, 90, 234);
+        }
+        #start:hover {
+            background-color: rgb(31, 7, 128);
+        }
+        #pause {
+            background-color: rgb(152, 102, 40);
+        }
+        #pause:hover {
+            background-color: yellow;
+        }
+        #reset {
+            background-color: rgb(237, 107, 107);
+        }
+        #reset:hover {
+            background-color: rgb(194, 4, 4);
+        }
+    </style>
+</head>
+<body> 
+    <header>
+        <h1>Stop Watch</h1>
+    </header>
+    <div class="root">
+        <div id="displayTime"></div>
+        <div class="buttons">
+            <input type="button" id="start" value="Start">
+            <input type="button" id="pause" value="Pause">
+            <input type="button" id="reset" value="Reset">
+        </div>
+    </div>
+</body>
+<script src="stopwatch.js"></script>
+</html>
